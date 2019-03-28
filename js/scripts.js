@@ -7,10 +7,10 @@ $(document).ready(function(){
     name = $('#name').val();
     gender = $('#gender-select').val();
     if(name === "" || gender === "Who do you like to date?") {
-      $(".show").text("Both fields are required!");
+      $("#show").text("Both fields are required!");
       //$('.form-group').addClass('has-warning');
     } else {
-      $(".show").text("");
+      $("#show").hide();
       $('#form1').hide();
       $('#form2').show();
     }
@@ -25,9 +25,11 @@ $(document).ready(function(){
   $('#btn3').click(function(){
   hair = $("input:radio[name=hair]:checked").val();
   $('#form3').hide();
+  $(".btn-back").show();
   if(gender === 'Men') {
     if(hair === 'dark') {
       $('#hagrid').show();
+
     } else if (hair === 'blonde'){
       $('#draco').show();
     } else if (hair === 'red') {
@@ -68,6 +70,13 @@ $(document).ready(function(){
     }
   }
 
+
+  });
+
+  $(".btn-back").click(function(){
+    $('img').hide();
+    $('.btn-back').hide();
+    $('#form1').show();
 
   });
 
