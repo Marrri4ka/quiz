@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+      <script src="js/scripts.js"></script>
+
+    <title>quiz</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="form1">
+        <div class="form-group">
+          <label for="name">What is your name?</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <select class="form-control" id="gender-select">
+          <option>Who do you like to date?</option>
+          <option>Men</option>
+          <option>Women</option>
+          <option>Anybody!</option>
+        </select>
+        <button class="btn" type="submit" id="btn1">Submit</button>
+      </div>
+
+      <div id="form2">
+        <p>Which word best describes your personality?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="personality" value="shy" checked>
+            Shy
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="personality" value="adventurous">
+            Adventurous
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="personality" value="funny">
+            Funny
+          </label>
+        </div>
+        <button class="btn" type="submit" id="btn2">Submit</button>
+      </div>
+
+      <div id='form3'>
+        <p>What hair color do you find most attractive?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="hair" value="dark" checked>
+            Dark
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="hair" value="blonde">
+            Blonde
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="hair" value="red">
+            Red
+          </label>
+        </div>
+        <button class="btn" type="submit" id="btn3">Submit</button>
+      </div>
+      <p class ="show"></p>
+
+      <img src="img/luna.jpeg" id="luna">
+      <img src="img/ron.jpeg" id="ron">
+      <img src="img/hermione.jpeg" id="hermione">
+      <img src="img/hagrid.jpeg" id="hagrid">
+      <img src="img/draco.jpeg" id="draco">
+      <img src="img/cho.jpeg" id="cho">
+      <img src="img/dobby.jpeg" id="dobby">
+
+    </div>
+  </body>
+</html>
